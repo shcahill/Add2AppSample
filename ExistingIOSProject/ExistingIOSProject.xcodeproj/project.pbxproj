@@ -95,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 004AE0BB2245584500DA932F /* Build configuration list for PBXNativeTarget "ExistingIOSProject" */;
 			buildPhases = (
+				001939C6224562CC00766D95 /* ShellScript */,
 				1320ADD30E9BD6992BE13648 /* [CP] Check Pods Manifest.lock */,
 				004AE0A52245584300DA932F /* Sources */,
 				004AE0A62245584300DA932F /* Frameworks */,
@@ -157,6 +158,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		001939C6224562CC00766D95 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\"  \nbuild\n\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed\n";
+		};
 		1320ADD30E9BD6992BE13648 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -359,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ExistingIOSProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -377,6 +396,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ExistingIOSProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
