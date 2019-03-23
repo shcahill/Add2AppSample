@@ -9,13 +9,13 @@ Widget _widgetForRoute(String route) {
   switch (route) {
     case 'route1':
       return Center(
-        child: Text('route1'),
+        child: Text('route1', textDirection: TextDirection.ltr),
       );
     case 'route_counter':
       return MyApp();
     default:
       return Center(
-        child: Text('Unknown route: $route'),
+        child: Text('Unknown route: $route', textDirection: TextDirection.ltr),
       );
   }
 }
